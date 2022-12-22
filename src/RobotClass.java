@@ -45,13 +45,13 @@ public class RobotClass {
     public void Left() {
         switch(this.d) {
             case 0:
-                --this.y;
+                --this.x;
                 break;
             case 1:
-                ++this.x;
+                ++this.y;
                 break;
             case 2:
-                ++this.y;
+                ++this.x;
                 break;
             case 3:
                 --this.x;
@@ -62,16 +62,16 @@ public class RobotClass {
     public void Right() {
         switch(this.d) {
             case 0:
-                ++this.y;
+                ++this.x;
                 break;
             case 1:
-                --this.x;
-                break;
-            case 2:
                 --this.y;
                 break;
+            case 2:
+                --this.x;
+                break;
             case 3:
-                ++this.x;
+                ++this.y;
         }
         this.checkBounds();
     }
